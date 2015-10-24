@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="ideas">
+        <column>id</column>
+        <column>keyword</column>
+        <column>created_at</column>
+        <column>updated_at</column>
+        <row>
+            <value>1</value>
+            <value>Gmail</value>
+            <value>2015/10/11 00:00:00</value>
+            <value>2015/10/21 00:00:00</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>写真</value>
+            <value>2015/10/12 00:00:00</value>
+            <value>2015/10/22 00:00:00</value>
+        </row>
+    </table>
+</dataset>

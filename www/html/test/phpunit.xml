@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit>
+    <php>
+        <var name="DB_DSN" value="mysql:dbname=bond_idea_test;host=localhost"/>
+        <var name="DB_USER" value="bond_admin"/>
+        <var name="DB_PASSWD" value="bondpass"/>
+        <var name="DB_DBNAME" value="bond_idea_test"/>
+    </php>
+</phpunit>
