@@ -26,7 +26,7 @@
     <div class="well well-lg text-center">
             <?php foreach ($modifiers as $modifier): ?>
         <h3>
-                <?php echo $keyword; ?>で<?php echo $modifier["keyword"]; ?>をする<br />
+                <?php echo $keyword; ?>に<?php echo $modifier["keyword"]; ?>を組み合わせたら？<br />
         </h3>
             <?php endforeach; ?>
     </div>

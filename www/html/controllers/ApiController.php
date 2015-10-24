@@ -12,6 +12,9 @@ class ApiController extends Controller
     const GET_KIZAPI_KEYWORD_START = "--- getKizapiKeywordAction start ---";
     const GET_KIZAPI_KEYWORD_END   = "--- getKizapiKeywordAction end   ---";
 
+    /**
+     *
+     */
     public function getKizapiKeywordAction()
     {
 
@@ -70,7 +73,7 @@ class ApiController extends Controller
           sprintf(self::LOG_FORMAT, $this->finger, var_export(
             self::GET_KIZAPI_KEYWORD_END, 1), date(DATE_RFC822), __FILE__, __METHOD__, __LINE__)
         );
-        
+
         return $this->redirect('/');
 
     }

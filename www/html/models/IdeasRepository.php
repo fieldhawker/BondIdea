@@ -14,6 +14,12 @@ class IdeasRepository extends DbRepository
     const LENGTH_KEYWORD_MAX        = 255;
 
 
+    /**
+     * @param null $keyword
+     *
+     * @return bool
+     * @throws Exception
+     */
     public function insert($keyword = null)
     {
         $now = new DateTime();
@@ -40,6 +46,11 @@ class IdeasRepository extends DbRepository
         return true;
     }
 
+    /**
+     * @param $keyword
+     *
+     * @return bool
+     */
     public function isDuplicateKeyword($keyword)
     {
         $sql = "
@@ -53,6 +64,9 @@ class IdeasRepository extends DbRepository
         return ($row['cnt']) ? true : false;
     }
 
+    /**
+     * @return array
+     */
     public function fetchRndKeyword()
     {
         $sql = "
@@ -69,6 +83,11 @@ class IdeasRepository extends DbRepository
     }
 
 
+    /**
+     * @param $keyword
+     *
+     * @return array
+     */
     public function validInsert($keyword)
     {
         $errors = array();

@@ -8,11 +8,17 @@
 class BondIdeaApplication extends Application
 {
 
+    /**
+     * @return string
+     */
     public function getRootDir()
     {
         return dirname(__FILE__);
     }
 
+    /**
+     * @return array
+     */
     protected function registerRoutes()
     {
         return array(
@@ -23,10 +29,13 @@ class BondIdeaApplication extends Application
           '/idea/register'
           => array('controller' => 'idea', 'action' => 'register'),
           '/console/getKizapiKeyword'
-          => array('controller' => 'api',  'action' => 'getKizapiKeyword'),
+          => array('controller' => 'api', 'action' => 'getKizapiKeyword'),
         );
     }
 
+    /**
+     *
+     */
     protected function configure()
     {
         $this->db_manager->connect('master', array(
